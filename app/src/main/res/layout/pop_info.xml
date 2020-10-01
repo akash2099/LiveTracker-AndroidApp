@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_popup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/head_rem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/atma_bold"
+                android:text="Link Start"
+                android:textColor="#071FF4"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_label_point"
+            style="@android:style/Widget.Material.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Unique PIN"
+            android:inputType="textPersonName"
+            android:textColor="#8908A5" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/live_bu"
+                android:layout_width="0.8in"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:background="#34E80C"
+                android:fontFamily="@font/anonymous_pro_bold"
+                android:onClick="bu_save_rem"
+                android:outlineAmbientShadowColor="#F60909"
+                android:text="LIVE"
+                android:textColor="#4400FD" />
+
+            <Button
+                android:id="@+id/checkpoint_bu"
+                android:layout_width="0.8in"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:background="#F3B109"
+                android:fontFamily="@font/anonymous_pro_bold"
+                android:onClick="bu_delete_rem"
+                android:text="HISTORY"
+                android:textColor="#000000" />
+
+            <!--            -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aldrich</item>
+        <item>@font/anonymous_pro_bold</item>
+        <item>@font/atma_bold</item>
+        <item>@font/baloo</item>
+        <item>@font/bungee_inline</item>
+        <item>@font/caveat_brush</item>
+        <item>@font/chewy</item>
+        <item>@font/crushed</item>
+        <item>@font/mystery_quest</item>
+        <item>@font/overpass_bold</item>
+        <item>@font/overpass_thin</item>
+        <item>@font/shojumaru</item>
+        <item>@font/wallpoet</item>
+    </array>
+</resources>

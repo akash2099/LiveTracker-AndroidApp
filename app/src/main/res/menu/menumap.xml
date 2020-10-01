@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_normal"
+        app:showAsAction="never"
+        android:icon="@drawable/info_icon"
+        android:title="Normal" />
+
+    <item
+        android:id="@+id/menu_hybrid"
+        app:showAsAction="never"
+        android:icon="@drawable/info_icon"
+        android:title="Hybrid" />
+
+    <item
+        android:id="@+id/menu_satellite"
+        app:showAsAction="never"
+        android:icon="@drawable/info_icon"
+        android:title="Satellite" />
+    <item
+        android:id="@+id/menu_terrain"
+        app:showAsAction="never"
+        android:icon="@drawable/info_icon"
+        android:title="Terrain" />
+
+</menu>
