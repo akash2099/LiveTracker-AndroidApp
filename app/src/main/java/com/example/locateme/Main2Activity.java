@@ -25,6 +25,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
@@ -39,6 +40,7 @@ public class Main2Activity extends AppCompatActivity {
     String number;
     String Name;
     String Mode;
+
 
 
     int PERMISSION_MODE=0;
@@ -260,15 +262,18 @@ public class Main2Activity extends AppCompatActivity {
     }
 
 
-    public void bu_add_checkpoint(View view) {
-        Toast.makeText(getApplicationContext(), "Checkpoints are currently under development!", Toast.LENGTH_SHORT).show();
-        // Code for adding checkpoints
-    }
 
-    public void bu_street_special(View view) {
-        Toast.makeText(getApplicationContext(), "Street View coming soon!", Toast.LENGTH_SHORT).show();
-    }
 
+//    public void tracker_icon_click_function(View view) {
+//        Intent tracker_list_activity=new Intent(getApplicationContext(),Main3Activity.class);
+//        tracker_list_activity.putExtra("titlefrom","ignore");
+//        tracker_list_activity.putExtra("descriptionfrom","ignore");
+//        tracker_list_activity.putExtra("add_or_update","ADD");
+////        tracker_list_activity.putExtra("recordno",RecordID_string);
+//        tracker_list_activity.putExtra("rem_time","ignore");
+//        tracker_list_activity.putExtra("rem_date","ignore");
+//        startActivity(tracker_list_activity);
+//    }
 
 
     private class MyCustomAdapter extends BaseAdapter {

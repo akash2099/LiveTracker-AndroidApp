@@ -19,7 +19,7 @@ import java.net.URL;
 import javax.net.ssl.HttpsURLConnection;
 
 public class MainActivity extends AppCompatActivity {
-
+    boolean data_present=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,14 +30,26 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
         navigate_next();
+
+        //if data not null in shared preference then data_present=true, else nothing.
+
     }
 
     public void navigate_next(){
         final Handler handler = new Handler();
         final Runnable r = new Runnable() {
             public void run() {
-                Intent inten=new Intent(getApplicationContext(),Main2Activity.class);
-                startActivity(inten);
+
+                if (data_present) {
+                    Intent inten = new Intent(getApplicationContext(), Main4ActivityMain.class);
+                    startActivity(inten);
+                    finish();
+                }
+                else {
+                    Intent inten = new Intent(getApplicationContext(), LoginActivity.class);
+                    startActivity(inten);
+                    finish();
+                }
                 System.out.println("Starting main activity");
             }
         };

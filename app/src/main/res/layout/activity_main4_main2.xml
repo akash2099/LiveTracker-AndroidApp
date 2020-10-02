@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main4ActivityMain">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_trackers_bu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="4in"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:tooltipText="ADD NEW TRACKER"
+        android:alpha="0.65"
+        android:clickable="true"
+        android:cropToPadding="false"
+        android:onClick="tracker_icon_click_function"
+        app:backgroundTint="#FFFFFF"
+        app:elevation="10dp"
+        app:fabSize="auto"
+        app:hoveredFocusedTranslationZ="6dp"
+        app:maxImageSize="55dp"
+        app:pressedTranslationZ="6dp"
+        app:srcCompat="@drawable/tracker_icon" />
+
+
+    <ListView
+        android:id="@+id/i_can_track_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFE8F6"
+        android:dividerHeight="3dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp">
+
+    </ListView>
+</RelativeLayout>

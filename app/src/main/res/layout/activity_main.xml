@@ -27,9 +27,9 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/wallpoet"
             android:gravity="center"
-            android:text="LOCATE  ME"
+            android:text="LIVE TRACKER"
             android:textColor="#000000"
-            android:textSize="38sp"
+            android:textSize="35sp"
             android:visibility="visible" />
     </LinearLayout>
 
