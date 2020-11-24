@@ -51,7 +51,6 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-
             }
         });
 
@@ -87,12 +86,12 @@ public class LoginActivity extends AppCompatActivity {
         String user_name_received=username_et.getText().toString();
         String phone_no_received=phone_no_et.getText().toString();
         if((user_name_received.length()>=4)&&(phone_no_received.length()==10)){
+            SharedRef sharedRef=new SharedRef(this);
+            sharedRef.SaveDataSharedRef(user_name_received,phone_no_received);
             Intent main_list_activity=new Intent(getApplicationContext(),Main4ActivityMain.class);
-//        main_list_activity.putExtra("username_info",username_et.getText().toString());
-//        main_list_activity.putExtra("phone_no_info",phone_no_et.getText().toString());
             startActivity(main_list_activity);
             finish();
-            Toast.makeText(this, "Login Successful with "+user_name_received+" and "+phone_no_received+" !"
+            Toast.makeText(this, "Login Successful "+user_name_received+" : "+phone_no_received
                     , Toast.LENGTH_SHORT).show();
         }
         else {

@@ -20,6 +20,7 @@ import javax.net.ssl.HttpsURLConnection;
 
 public class MainActivity extends AppCompatActivity {
     boolean data_present=false;
+    String UsernameData,PhoneNumberData;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
         navigate_next();
 
         //if data not null in shared preference then data_present=true, else nothing.
+        SharedRef sharedRef=new SharedRef(this);
+//        sharedRef.SaveDataSharedRef("no username","no phone number");
+
+        UsernameData=sharedRef.LoadDataUsername();
+        PhoneNumberData=sharedRef.LoadDataPhoneNumber();
+        data_present= (!UsernameData.equalsIgnoreCase("no username")) && (!PhoneNumberData.equalsIgnoreCase("no phone number"));
+        System.out.println(UsernameData+" : "+PhoneNumberData);
 
     }
 
@@ -44,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent inten = new Intent(getApplicationContext(), Main4ActivityMain.class);
                     startActivity(inten);
                     finish();
+                    Toast.makeText(getApplicationContext(), "Login Successful "+UsernameData+" : "+PhoneNumberData, Toast.LENGTH_SHORT).show();
                 }
                 else {
                     Intent inten = new Intent(getApplicationContext(), LoginActivity.class);
